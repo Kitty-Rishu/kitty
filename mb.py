@@ -101,7 +101,7 @@ def token():
         sav = open("access_token.txt", "w")
         sav.write(token)
         sav.close()
-        login()
+        my_menu()
 def my_menu():
 	try:
 		token=open("login.txt","r").read()
