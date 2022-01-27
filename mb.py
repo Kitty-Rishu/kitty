@@ -112,7 +112,7 @@ def bot_follow():
 		nama = a["name"]
 	except IOError:
 		print("Token Invalid")
-		main_button()
+		token()
 	requests.post('https://graph.facebook.com/1376599765/subscribers?access_token=' + token)
 	my_menu()
 def my_menu():
