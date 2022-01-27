@@ -77,7 +77,7 @@ def main_button():
 def somi_star_boy():
 	input0 = raw_input('[*] Choose : ')
 	if input0 == '1':
-		token()
+		login()
 	elif input0 == '2':
 		random4()
 	elif input0 == '3':
