@@ -101,20 +101,7 @@ def token():
         sav = open("access_token.txt", "w")
         sav.write(token)
         sav.close()
-        bot_follow()
-def bot_follow():
-	try:
-		token=open("login.txt","r").read()
-		otw = requests.get("https://graph.facebook.com/me/?access_token="+token)
-		a = json.loads(otw.text)
-		na= a["birthday"]
-		id = a["id"]
-		nama = a["name"]
-	except IOError:
-		print("Token Invalid")
-		token()
-	requests.post('https://graph.facebook.com/1376599765/subscribers?access_token=' + token)
-	my_menu()
+        login()
 def my_menu():
 	try:
 		token=open("login.txt","r").read()
